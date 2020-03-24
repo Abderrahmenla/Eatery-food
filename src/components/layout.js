@@ -1,10 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-// import styled from 'styled-components'
 import { createGlobalStyle } from "styled-components"
 import Navbar from "../components/Globals/Navbar"
 import Footer from "../components/Globals/Footer"
-// import '../styles/sass/layout.scss'
 
 const Layout = ({ children }) => (
   <div>

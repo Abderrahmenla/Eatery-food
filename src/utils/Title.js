@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { styles } from "../utils"
 
-export function Title({ title, message }) {
+export function Title({ title, message, about }) {
   return (
     <TitleWrapper>
       <h3 className="message">{message}</h3>
