@@ -3,12 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root {
-  --mainOrange: #f15025;
-  --mainYellow: #d2aa5c;
-}
 body {
-  font-family: "Caveat", cursive;
-  color: black;
-  background: white;
+  font-family: 'Caveat', cursive;
 }
