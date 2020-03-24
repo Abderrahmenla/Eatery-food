@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import StyledBg from "../components/StyledBg"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -7,15 +7,16 @@ import { Banner, BannerButton } from "../utils"
 import QuickInfo from "../components/HomePageComponents/QuickInfo"
 import Gallery from "../components/HomePageComponents/Gallery"
 import Menu from "../components/HomePageComponents/Menu"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <StyledBg img={data.contactBcg.childImageSharp.fluid} home="true">
       <Banner title="eatery" subtitle="55 main street- Santa Monica, CA">
-        <Link to="/menu/" style={{ textDecoration: "none" }}>
+        <AniLink fade to="/menu/" style={{ textDecoration: "none" }}>
           <BannerButton style={{ margin: "2rem auto" }}>menu</BannerButton>
-        </Link>
+        </AniLink>
       </Banner>
     </StyledBg>
     <QuickInfo />

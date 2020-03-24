@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { styles } from "../../../utils"
 export default class NavbarLinks extends Component {
   state = {
@@ -33,9 +33,9 @@ export default class NavbarLinks extends Component {
         {this.state.links.map(item => {
           return (
             <li key={item.id}>
-              <Link to={item.path} className="nav-link">
+              <AniLink fade to={item.path} className="nav-link">
                 {item.name}
-              </Link>
+              </AniLink>
             </li>
           )
         })}
